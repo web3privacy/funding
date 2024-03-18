@@ -1,0 +1,30 @@
+name: New Funding Request Proposal (FRP)
+description: Here you can submit your Funding Request Proposal
+title: "<Target of funding>"
+projects: ["web3privacy/14"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this [Funding Request](https://docs.web3privacy.info/resources/funding/) Proposal!
+  - type: input
+    id: total-amount
+    attributes:
+      label: Total amount
+      placeholder: ex. $1000
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose of funds
+      description: Describe purpose for which the funds will be used
+    validations:
+      required: true
+  - type: input
+    id: responsibility
+    attributes:
+      label: Responsible people or group
+      description: The person or group of people responsible for this proposal
+    validations:
+      required: true
